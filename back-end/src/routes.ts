@@ -7,7 +7,9 @@ import { SubmitFeedbackUsecase } from './use-cases/submit-feedback-use-case';
 
 export const routes = Router();
 
-  routes.get('/', (req, res) => res.send('Hello, welcome! Leave your feedback.'))
+  routes.get('/', (req, res) => res.send(`<div style="display: flex ; align-items: center; justify-content:center; height: 100vh;" >
+  <h1>Hello, welcome! Leave your feedback.</h1>
+</div>`))
 
   routes.post('/feedbacks', async(req, res) => {
       
